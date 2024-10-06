@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signin-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .signin-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .signin-container input[type="text"],
+        .signin-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        .signin-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .signin-container button:hover {
+            background-color: #f6121d;
+        }
+
+        .signin-container .options {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .signin-container a {
+            color: #b3b3b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .signin-container a:hover {
+            text-decoration: underline;
+        }
+
+        .signin-container .remember {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .signin-container .remember input {
+            margin-right: 10px;
+        }
+
+        .signin-container .or {
+            text-align: center;
+            margin: 20px 0;
+            color: #b3b3b3;
+        }
+
+        .signin-container .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signin-container .signup a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signin-container">
+        <h1>Sign In</h1>
+        <form>
+            <input type="text" name="email_or_mobile" placeholder="Email or mobile number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+
+            <div class="or">OR</div>
+            New to Netflix?
+            <button type="button" style="background-color: #6d6d6e;"><a href="singup.html">Sign up now</a></button>
+            <div class="options">
+                <a href="#">Forgot your password?</a>
+            </div>
+        </form>
+
+
+        <div class="remember">
+            <label>
+                <input type="checkbox" name="remember_me">
+                Remember me
+            </label>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
